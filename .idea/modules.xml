@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaClassTraining/JavaClassTraining.iml" filepath="$PROJECT_DIR$/JavaClassTraining/JavaClassTraining.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaHomeTasks/JavaHomeTasks.iml" filepath="$PROJECT_DIR$/JavaHomeTasks/JavaHomeTasks.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/TMS.iml" filepath="$PROJECT_DIR$/.idea/TMS.iml" />
     </modules>
