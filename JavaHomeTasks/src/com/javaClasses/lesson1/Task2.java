@@ -1,6 +1,6 @@
 package com.javaClasses.lesson1;
 
-public class Task8 {
+public class Task2 {
     public static void main(String[] args) {
         int a = 1;
         int b = 1;

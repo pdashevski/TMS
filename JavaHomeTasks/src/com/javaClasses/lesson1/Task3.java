@@ -1,6 +1,6 @@
 package com.javaClasses.lesson1;
 
-public class Task9 {
+public class Task3 {
     public static void main(String[] args) {
         double y = 10;
         double x = 10;
