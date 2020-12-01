@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
     число однозначным, "двузначным или трехзначным и более.
  */
 
-public class Task_5 {
+public class Task5 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите число: ");

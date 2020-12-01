@@ -10,7 +10,7 @@ import java.util.ArrayList;
     наборе.
  */
 
-public class Task_3 {
+public class Task3 {
     public static void main(String[] args) throws IOException {
         ArrayList<Integer> list = new ArrayList<>();
         BufferedReader reader1 = new BufferedReader(new InputStreamReader(System.in));

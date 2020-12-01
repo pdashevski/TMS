@@ -14,7 +14,7 @@ import java.io.InputStreamReader;
         и т.д.
  */
 
-public class Task_6 {
+public class Task6 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите число программистов: ");

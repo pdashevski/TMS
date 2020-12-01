@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
     10. Вывести полученное число.
  */
 
-public class Task_1 {
+public class Task1 {
 
     public static void main(String[] args) throws IOException {
         System.out.println("Введите целое число: ");

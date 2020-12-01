@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
     2. Даны 2 числа. Вывести большее из них.
  */
 
-public class Task_2 {
+public class Task2 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader1 = new BufferedReader(new InputStreamReader(System.in));
         BufferedReader reader2 = new BufferedReader(new InputStreamReader(System.in));
