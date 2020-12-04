@@ -27,7 +27,7 @@ public class Task7 {
         System.out.println("\n");
 
         int maxNumber = array[0];
-        int index = 0;
+        int index = 1;
         for (int i = 0; i < array.length; i++) {
             if (array[i] > maxNumber) {
                 maxNumber = array[i];
