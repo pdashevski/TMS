@@ -37,6 +37,26 @@ public class Task9 {
                     System.out.print(array[i] + " ");
                 }
 
+                for (int i = 0; i < array.length / 2; i++) {
+                    sumLeft += array[i];
+                }
+
+                for (int i = array.length / 2; i < array.length; i++) {
+                    sumRight += array[i];
+                }
+
+                if (sumLeft == sumRight) {
+                    System.out.println("Левая половина массива и правая равны!");
+                } else {
+                    System.out.print("\n");
+                    System.out.println("Левая половина массива = " + sumLeft + ", правая половина массива = " + sumRight);
+                    System.out.print("\n");
+                    System.out.println(sumLeft > sumRight ? "Левая половина массива больше " + "(" + sumLeft + ")" : "Правая половина массива больше " + "(" + sumRight + ")");
+                }
+
+
+
+
 
             }
             break;
