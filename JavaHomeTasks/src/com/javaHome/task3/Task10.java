@@ -12,11 +12,53 @@ package com.javaHome.task3;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Random;
 
 public class Task10 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите число большее 3:");
         String s = reader.readLine();
         int n = Integer.parseInt(s);
+        Random randomNumber = new Random();
+        int n1 = 0;
+
+        for (; ; ) {
+            if (n < 3) {
+                System.out.println("Вы ввели число меньше, чем 3!");
+                break;
+            } else {
+                int[] array1 = new int[n];
+
+                for (int i = 0; i < array1.length; i++) {
+                    array1[i] = randomNumber.nextInt(n);
+                    System.out.print(array1[i] + " ");
+                }
+
+                for (int i = 0; i < array1.length; i++) {
+                    if (array1[i] % 2 == 0) {
+                        n1++;
+                    }
+                }
+
+                int[] array2 = new int[n1];
+                System.out.print("\n");
+
+                int incr = 0;
+                for (int i = 0; i < array1.length; i++) {
+                    if (array1[i] % 2 == 0) {
+                        array2[incr] = array1[i];
+                        incr++;
+                    }
+                }
+
+                System.out.print("\n");
+                for (int a : array2) {
+                    System.out.print(a + " ");
+                }
+            }
+            break;
+        }
     }
 }
+
