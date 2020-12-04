@@ -21,16 +21,13 @@ public class Task8 {
         for (int i = 0; i < array1.length; i++) {
             array1[i] = randomNumber.nextInt(9);
             array2[i] = randomNumber.nextInt(9);
+            array3[i] = (double) array1[i] / array2[i];
         }
 
         int countOfIntegrNumbers = 0;
 
         for (int i = 0; i < array3.length; i++) {
-            array3[i] = (double)array1[i] / (double)array2[i];
-        }
-
-        for (int i = 0; i < array3.length; i++) {
-            if (array3[i] % 2 == 0) {
+            if (array3[i] % 1 == 0) {
                 countOfIntegrNumbers++;
             }
         }
@@ -50,5 +47,8 @@ public class Task8 {
         for (double c : array3) {
             System.out.print(c + "  ");
         }
+        System.out.println("\n");
+
+        System.out.print("Количество целых элементов в 3 массиве: " + countOfIntegrNumbers);
     }
 }
