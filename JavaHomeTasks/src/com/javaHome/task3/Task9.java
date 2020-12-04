@@ -53,17 +53,8 @@ public class Task9 {
                     System.out.print("\n");
                     System.out.println(sumLeft > sumRight ? "Левая половина массива больше " + "(" + sumLeft + ")" : "Правая половина массива больше " + "(" + sumRight + ")");
                 }
-
-
-
-
-
             }
             break;
         }
-
-
-
-
     }
 }
