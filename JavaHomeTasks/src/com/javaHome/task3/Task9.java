@@ -19,15 +19,30 @@ public class Task9 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Random randomNumber = new Random();
-        System.out.println("Введите положительное число:");
+        System.out.println("Введите положительное ЧЕТНОЕ число:");
         String s = reader.readLine();
         int arraySize = Integer.parseInt(s);
-        int[] array = new int[arraySize];
 
-        for (int i = 0; i < array.length; i ++) {
-            array[i] = randomNumber.nextInt(15);
-            System.out.print(array[i] + " ");
+        int sumLeft = 0, sumRight = 0;
+
+        for (; ;) {
+            if (arraySize % 2 != 0) {
+                System.out.println("Вы ввели неподходящее число!");
+                break;
+            } else {
+                int[] array = new int[arraySize];
+
+                for (int i = 0; i < array.length; i ++) {
+                    array[i] = randomNumber.nextInt(15);
+                    System.out.print(array[i] + " ");
+                }
+
+
+            }
+            break;
         }
+
+
 
 
     }
