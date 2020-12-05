@@ -17,14 +17,13 @@ import java.util.Random;
 public class Task10 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите число большее 3:");
+        String s = reader.readLine();
+        int n = Integer.parseInt(s);
         Random randomNumber = new Random();
+        int n1 = 0;
 
         for (; ;) {
-            System.out.println("Введите число большее 3:");
-            String s = reader.readLine();
-            int n = Integer.parseInt(s);
-            int n1 = 0;
-
             if (n < 3) {
                 System.out.println("Вы ввели число меньше, чем 3!");
                 break;
