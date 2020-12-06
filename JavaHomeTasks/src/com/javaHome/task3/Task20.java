@@ -34,8 +34,8 @@ public class Task20 {
 
         System.out.print("\n");
         System.out.println(Arrays.toString(array));
-        System.out.println("Min: " + array[min]);
-        System.out.println("Max: " + array[max]);
+        System.out.println("Минимальный элемент массива: " + array[min]);
+        System.out.println("Максимальный элемент массива: " + array[max]);
 
         temp = array[min];
         array[min] = array[max];
