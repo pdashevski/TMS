@@ -17,7 +17,6 @@ public class Task16 {
         int arraySize = Integer.parseInt(s);
         int[] array1 = new int[10];
         Random randomNumber = new Random();
-        boolean isDifferent = false;
 
         System.out.print("Исходный массив: ");
 
