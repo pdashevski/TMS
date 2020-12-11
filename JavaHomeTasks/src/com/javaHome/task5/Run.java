@@ -9,13 +9,13 @@ public class Run {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         Computer computer1 = new Computer();
-        System.out.println("Введите название CPU: ");
+        System.out.println("Введите название CPU (AMD/Intel): ");
         computer1.setCpuName(reader.readLine());
 
-        System.out.println("Введите количество RAM: ");
+        System.out.println("Введите количество RAM (MB): ");
         computer1.setRamQuantity(Integer.parseInt(reader.readLine()));
 
-        System.out.println("Введите объем HDD: ");
+        System.out.println("Введите объем HDD (GB): ");
         computer1.setHddVolume(Integer.parseInt(reader.readLine()));
 
         System.out.println("Введите кол-во жц пк: ");
@@ -23,5 +23,11 @@ public class Run {
 
         computer1.pcInfo();
         computer1.pcTurnOn();
+        computer1.pcTurnOn();
+
+        Computer computer2 = new Computer("Intel", 4096, 1000, 3);
+
+        computer2.pcInfo();
+        computer2.pcTurnOn();
     }
 }

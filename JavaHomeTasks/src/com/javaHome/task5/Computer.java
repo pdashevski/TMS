@@ -11,12 +11,16 @@ public class Computer {
     private int ramQuantity;
     private int hddVolume;
     private int pcCycles;
+    private static boolean isBurned;
+    private static int computerCount = 1;
 
     public Computer(String cpuName, int ramQuantity, int hddVolume, int pcCycles) {
         this.cpuName = cpuName;
         this.ramQuantity = ramQuantity;
         this.hddVolume = hddVolume;
         this.pcCycles = pcCycles;
+        isBurned = false;
+        computerCount++;
     }
 
     public Computer() {
@@ -55,10 +59,10 @@ public class Computer {
         this.pcCycles = pcCycles;
     }
 
-
     public void pcInfo() {
         String cpu = getCpuName();
         int ram = getRamQuantity(), hdd = getHddVolume(), cycles = getPcCycles();
+        System.out.println("Computer number is: " + computerCount);
         System.out.println("CPU name: " + cpu);
         System.out.println("RAM quantity: " + ram);
         System.out.println("HDD volume: " + hdd);
@@ -66,26 +70,32 @@ public class Computer {
     }
 
     public void pcTurnOn() throws IOException {
-        System.out.println("PC is ON!");
-        int countOfStarts = 0;
-        while (countOfStarts < getPcCycles()) {
-            if (randomNumber() == userNumber()) {
-                countOfStarts++;
-                if (countOfStarts < getPcCycles()) {
-                    pcTurnOff();
+        if (!isBurned) {
+            System.out.println("PC " + getCpuName() + " is ON!");
+            int countOfStarts = 0;
+            while (countOfStarts < getPcCycles()) {
+                if (randomNumber() == userNumber()) {
+                    countOfStarts++;
+                    if (countOfStarts < getPcCycles()) {
+                        pcTurnOff();
+                    } else {
+                        pcBurn();
+                        isBurned = true;
+                        break;
+                    }
                 } else {
                     pcBurn();
+                    isBurned = true;
                     break;
                 }
-            } else {
-                pcBurn();
-                break;
             }
+        } else {
+            System.out.println("Нельзя запустить " + getCpuName() + ", он сгорел!");
         }
     }
 
     public void pcTurnOff() {
-        System.out.println("PC is OFF!");
+        System.out.println("PC " + getCpuName() + "  is OFF!");
 
     }
 
@@ -96,7 +106,7 @@ public class Computer {
     public static int randomNumber() {
         Random random = new Random();
         int randomNumber = random.nextInt(2);
-        System.out.println("(computer random number): " + randomNumber);
+        System.out.println("(~computer random number~): " + randomNumber);
         return randomNumber;
     }
 
