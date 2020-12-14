@@ -11,8 +11,9 @@ public class Computer {
     private int ramQuantity;
     private int hddVolume;
     private int pcCycles;
-    private static boolean isBurned;
-    private static int computerCount = 1;
+    private boolean isBurned;
+    private static int computerCount = 0;
+    private int countOfCycle;
 
     public Computer(String cpuName, int ramQuantity, int hddVolume, int pcCycles) {
         this.cpuName = cpuName;
@@ -21,6 +22,7 @@ public class Computer {
         this.pcCycles = pcCycles;
         isBurned = false;
         computerCount++;
+        this.countOfCycle = pcCycles;
     }
 
     public Computer() {
@@ -60,47 +62,64 @@ public class Computer {
     }
 
     public void pcInfo() {
-        String cpu = getCpuName();
-        int ram = getRamQuantity(), hdd = getHddVolume(), cycles = getPcCycles();
         System.out.println("Computer number is: " + computerCount);
-        System.out.println("CPU name: " + cpu);
-        System.out.println("RAM quantity: " + ram);
-        System.out.println("HDD volume: " + hdd);
-        System.out.println("PC cycle quantity: " + cycles);
+        System.out.println("CPU name: " + cpuName);
+        System.out.println("RAM quantity: " + ramQuantity);
+        System.out.println("HDD volume: " + hddVolume);
+        System.out.println("PC cycle quantity: " + pcCycles);
     }
 
     public void pcTurnOn() throws IOException {
         if (!isBurned) {
-            System.out.println("PC " + getCpuName() + " is ON!");
-            int countOfStarts = 0;
-            while (countOfStarts < getPcCycles()) {
+            System.out.println("PC " + cpuName + " is ON!");
+            while (countOfCycle != 0) {
+                countOfCycle--;
                 if (randomNumber() == userNumber()) {
-                    countOfStarts++;
-                    if (countOfStarts < getPcCycles()) {
+                    if (countOfCycle != 0) {
                         pcTurnOff();
                     } else {
                         pcBurn();
-                        isBurned = true;
-                        break;
+                        //isBurned = true;
+                        //break;
                     }
                 } else {
+                    //isBurned = true;
                     pcBurn();
-                    isBurned = true;
-                    break;
+                    //break;
                 }
             }
         } else {
-            System.out.println("Нельзя запустить " + getCpuName() + ", он сгорел!");
+            System.out.println("Нельзя запустить " + cpuName + ", он сгорел!");
         }
     }
 
-    public void pcTurnOff() {
-        System.out.println("PC " + getCpuName() + "  is OFF!");
-
+    public void pcTurnOff() throws IOException {
+        if (!isBurned) {
+            System.out.println("PC " + cpuName + " is OFF!");
+            while (countOfCycle != 0) {
+                countOfCycle--;
+                if (randomNumber() == userNumber()) {
+                    if (countOfCycle != 0) {
+                        pcTurnOn();
+                    } else {
+                        pcBurn();
+                        //isBurned = true;
+                        //break;
+                    }
+                } else {
+                    //isBurned = true;
+                    pcBurn();
+                    //break;
+                }
+            }
+        } else {
+            System.out.println("Нельзя запустить " + cpuName + ", он сгорел!");
+        }
     }
 
     public void pcBurn() {
-        System.out.println("PC " + getCpuName() + " is Burned!");
+        isBurned = true;
+        System.out.println("PC " + cpuName + " is Burned!");
     }
 
     public static int randomNumber() {
