@@ -18,12 +18,10 @@ public class Strings4 {
             for (String s1 : s.split(" ")) {
                 System.out.println(s1 + ": " + isPalindrome(s1));
             }
-
         }
         catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     public static int wordsCount(String s) {
