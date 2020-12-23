@@ -16,7 +16,7 @@ public class Strings2 {
             System.out.println(s.replace(s.charAt(3), s.charAt(0)));
         }
         catch (Exception e) {
-
+            e.printStackTrace();
         }
     }
 }

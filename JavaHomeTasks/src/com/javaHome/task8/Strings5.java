@@ -28,7 +28,7 @@ public class Strings5 {
             System.out.println("Count of equals words in strings:" + count1);
         }
         catch (Exception e) {
-
+            e.printStackTrace();
         }
     }
 

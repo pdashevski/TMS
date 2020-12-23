@@ -15,7 +15,7 @@ public class Strings3 {
             System.out.println(sb.reverse());
         }
         catch (Exception e) {
-
+            e.printStackTrace();
         }
     }
 }

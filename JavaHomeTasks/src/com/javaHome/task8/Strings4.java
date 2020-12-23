@@ -21,7 +21,7 @@ public class Strings4 {
 
         }
         catch (Exception e) {
-
+            e.printStackTrace();
         }
 
     }
