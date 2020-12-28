@@ -47,17 +47,6 @@ public class Tovar {
     }
 
     @Override
-    public boolean equals (Object otherObject){
-        if(!(otherObject instanceof Tovar)){
-            return false;
-        }
-        if(((Tovar)otherObject).getId() == (this.id)){
-            return true;
-        }
-        return false;
-    }
-
-    @Override
     public int hashCode() {
         return Objects.hash(id);
     }
