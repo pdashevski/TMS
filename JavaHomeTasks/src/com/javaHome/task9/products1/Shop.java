@@ -32,7 +32,6 @@ public class Shop {
             }
         }
         tovars.add(tovar);
-
     }
 
     public List<Tovar> getAllTovars() {
