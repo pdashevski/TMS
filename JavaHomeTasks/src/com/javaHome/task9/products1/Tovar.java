@@ -1,19 +1,20 @@
 package com.javaHome.task9.products1;
 
+import java.util.Map;
 import java.util.Objects;
 
 public class Tovar {
-    private int id;
+    private Integer id;
     private String name;
     private double price;
 
-    public Tovar(int id, String name, double price) {
+    public Tovar(Integer id, String name, double price) {
         this.id = id;
         this.name = name;
         this.price = price;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -51,5 +52,11 @@ public class Tovar {
         return Objects.hash(id);
     }
 
-
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Tovar tovar = (Tovar) o;
+        return Double.compare(tovar.price, price) == 0 && Objects.equals(id, tovar.id) && Objects.equals(name, tovar.name);
+    }
 }

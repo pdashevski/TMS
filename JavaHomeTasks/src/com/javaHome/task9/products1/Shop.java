@@ -5,10 +5,6 @@ import java.util.*;
 public class Shop {
     private List<Tovar> tovars = new ArrayList<>();
 
-    public Shop(List<Tovar> tovars) {
-        this.tovars = tovars;
-    }
-
     public Shop() {
 
     }
@@ -25,10 +21,8 @@ public class Shop {
         int x = tovar.getId();
         for (Iterator<Tovar> iterator = tovars.iterator(); iterator.hasNext(); ) {
             Tovar next =  iterator.next();
-            if(next.getId() == x) {
+            if(next.getId().equals(tovar.getId())) {
                 iterator.remove();
-            } else {
-                continue;
             }
         }
         tovars.add(tovar);
@@ -39,7 +33,7 @@ public class Shop {
     }
 
     public void removeTovarsFromList(int id) {
-        tovars.removeIf(next -> next.getId() == id);
+        tovars.removeIf(nextItem -> nextItem.getId().equals(id));
     }
 
     public void editTovar(Tovar tovar) {
