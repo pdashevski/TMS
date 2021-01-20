@@ -1,0 +1,197 @@
+[1611081433.238][INFO]: Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 13372
+[1611081433.238][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1611081434.050][INFO]: [06784616befe6e627195ea47579914f8] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Users\\DELL\\IdeaProjects\\TMS\\JavaClassTraining\\build\\downloads\\1611081431982_3456_1",
+               "plugins.always_open_pdf_externally": true,
+               "profile.default_content_setting_values.automatic_downloads": 1
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Users\\DELL\\IdeaProjects\\TMS\\JavaClassTraining\\build\\downloads\\1611081431982_3456_1",
+            "plugins.always_open_pdf_externally": true,
+            "profile.default_content_setting_values.automatic_downloads": 1
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1611081434.060][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Users\\DELL\\IdeaProjects\\TMS\\JavaClassTraining\\build\\downloads\\1611081431982_3456_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "automatic_downloads": 1,
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1611081434.071][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1611081434.074][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\DELL\AppData\Local\Temp\scoped_dir5132_1451430046" data:,
+[1611081434.808][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1611081436.861][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1611081438.919][INFO]: [06784616befe6e627195ea47579914f8] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "87.0.4280.141",
+      "chrome": {
+         "chromedriverVersion": "87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761})",
+         "userDataDir": "C:\\Users\\DELL\\AppData\\Local\\Temp\\scoped_dir5132_1451430046"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:62031"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "06784616befe6e627195ea47579914f8"
+}
+[1611081438.988][INFO]: [06784616befe6e627195ea47579914f8] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1611081438.988][INFO]: Waiting for pending navigations...
+[1611081438.992][INFO]: Done waiting for pending navigations. Status: ok
+[1611081439.115][INFO]: Waiting for pending navigations...
+[1611081439.117][INFO]: Done waiting for pending navigations. Status: ok
+[1611081439.117][INFO]: [06784616befe6e627195ea47579914f8] RESPONSE SetWindowRect {
+   "height": 770,
+   "width": 1368,
+   "x": 8,
+   "y": 8
+}
+[1611081439.129][INFO]: [06784616befe6e627195ea47579914f8] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1611081439.129][INFO]: [06784616befe6e627195ea47579914f8] RESPONSE SetTimeouts
+[1611081439.149][INFO]: [06784616befe6e627195ea47579914f8] COMMAND Navigate {
+   "url": "https://healthunify.com/bmicalculator/"
+}
+[1611081439.149][INFO]: Waiting for pending navigations...
+[1611081439.151][INFO]: Done waiting for pending navigations. Status: ok
+[1611081440.480][INFO]: Waiting for pending navigations...
+[1611081445.554][INFO]: Done waiting for pending navigations. Status: ok
+[1611081445.554][INFO]: [06784616befe6e627195ea47579914f8] RESPONSE Navigate
+[1611081445.659][INFO]: [06784616befe6e627195ea47579914f8] COMMAND FindElement {
+   "using": "css selector",
+   "value": "*[name='wg']"
+}
+[1611081445.659][INFO]: Waiting for pending navigations...
+[1611081445.716][INFO]: Done waiting for pending navigations. Status: ok
+[1611081445.758][INFO]: Waiting for pending navigations...
+[1611081445.760][INFO]: Done waiting for pending navigations. Status: ok
+[1611081445.760][INFO]: [06784616befe6e627195ea47579914f8] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "fba052a4-4ccc-432e-b0c1-137232a92a2e"
+}
+[1611081445.787][INFO]: [06784616befe6e627195ea47579914f8] COMMAND TypeElement {
+   "id": "fba052a4-4ccc-432e-b0c1-137232a92a2e",
+   "text": "85",
+   "value": [ "8", "5" ]
+}
+[1611081445.822][INFO]: Waiting for pending navigations...
+[1611081445.826][INFO]: Done waiting for pending navigations. Status: ok
+[1611081445.926][INFO]: Waiting for pending navigations...
+[1611081445.957][INFO]: Done waiting for pending navigations. Status: ok
+[1611081445.957][INFO]: [06784616befe6e627195ea47579914f8] RESPONSE TypeElement
+[1611081445.974][INFO]: [06784616befe6e627195ea47579914f8] COMMAND Quit {
+
+}
+[1611081446.085][INFO]: [06784616befe6e627195ea47579914f8] RESPONSE Quit
